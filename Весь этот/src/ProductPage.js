@@ -2,27 +2,26 @@
 import React from "react";
 import "./App.css";
 
-import logo from "../public/logo.png";
-import pointIcon from "../public/Point.png";
-import peopleIcon from "../public/People.png";
-import cardIcon from "../public/Card.png";
-import favoriteIcon from "../public/Favorite.png";
-import product1 from "../public/product1.png";
-import product2 from "../public/product2.png";
-import product3 from "../public/product3.png";
-import product4 from "../public/product4.png";
-import product5 from "../public/product5.png";
-import instagramIcon from "../public/instagram.png";
-import twitterIcon from "../public/twitter.png";
-import facebookIcon from "../public/facebook.png";
-import visaIcon from "../public/Visa.png";
-import mastercardIcon from "../public/MasterCard.png";
-import applepayIcon from "../public/ApplePay.png";
-import paypalIcon from "../public/PayPal.png";
-import productLeftImg from "../public/product-left.jpg"; 
-import product11 from "../public/product11.jpg";
-import product22 from "../public/product22.jpg";
-import product33 from "../public/product33.jpg";
+import logo from "../public/logoDM.png";
+import pointIcon from "../public/PointDM.png";
+import peopleIcon from "../public/PeopleDM.png";
+import cardIcon from "../public/CardDM.png";
+import favoriteIcon from "../public/FavoriteDM.png";
+import product1 from "../public/product1DM.png";
+import product2 from "../public/product2DM.png";
+import product3 from "../public/product3DM.png";
+import product4 from "../public/product4DM.png";
+import product5 from "../public/product5DM.png";
+import instagramIcon from "../public/instagramDM.png";
+import twitterIcon from "../public/twitterDM.png";
+import facebookIcon from "../public/facebookDM.png";
+import visaIcon from "../public/VisaDM.png";
+import mastercardIcon from "../public/MasterCardDM.png";
+import applepayIcon from "../public/ApplePayDM.png";
+import paypalIcon from "../public/PayPalDM.png";
+import product11 from "../public/product11DM.jpg";
+import product22 from "../public/product22DM.jpg";
+import product33 from "../public/product33DM.jpg";
 
 const TopBar = () => {
   const texts = [
