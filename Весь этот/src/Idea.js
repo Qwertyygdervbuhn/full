@@ -29,8 +29,6 @@ import masonryImg8 from "../public/masonry8.jpg";
 import masonryImg9 from "../public/masonry9.jpg";
 import masonryImg10 from "../public/masonry10.jpg";
 
-
-
 const TopBar = () => {
   const texts = [
     "#buy now", "#вседлядому", "#швидкотазручно",
@@ -39,10 +37,10 @@ const TopBar = () => {
   ];
 
   return (
-    <div id="up">
-      <div className="scroll-content">
+    <div id="up-DM">
+      <div className="scroll-content-DM">
         {texts.map((text, index) => (
-          <p className="textLine" key={index}>{text}</p>
+          <p className="textLine-DM" key={index}>{text}</p>
         ))}
       </div>
     </div>
@@ -50,39 +48,39 @@ const TopBar = () => {
 };
 
 const NavBar = () => (
-  <nav>
-    <div id="navLeft">
-      <div id="divForBurgerMenu">
-        <div id="burgerMenu">
-          <hr className="lineInBurgerMenu" />
-          <hr className="lineInBurgerMenu" />
-          <hr className="lineInBurgerMenu" />
+  <nav className="nav-DM">
+    <div id="navLeft-DM">
+      <div id="divForBurgerMenu-DM">
+        <div id="burgerMenu-DM">
+          <hr className="lineInBurgerMenu-DM" />
+          <hr className="lineInBurgerMenu-DM" />
+          <hr className="lineInBurgerMenu-DM" />
         </div>
-        <h3 id="h3ForBurgerMenu">Menu</h3>
+        <h3 id="h3ForBurgerMenu-DM">Menu</h3>
       </div>
-      <img src={logo} alt="logo" id="logoInNav" />
-      <div id="divForTegA">
+      <img src={logo} alt="logo" id="logoInNav-DM" />
+      <div id="divForTegA-DM">
         <a href="/products">Товари</a>
         <a href="/rooms">Кімнати</a>
         <a href="/design">Дизайн</a>
       </div>
     </div>
-    <div className="search-bar">
+    <div className="search-bar-DM">
       <input type="text" placeholder="Пошук" />
     </div>
-    <div id="navRight">
-      <div id="kiev">
+    <div id="navRight-DM">
+      <div id="kiev-DM">
         <img src={pointIcon} alt="Location" />
         <p>Київ</p>
       </div>
-      <div id="login-pass">
+      <div id="login-pass-DM">
         <img src={peopleIcon} alt="User" />
         <p>Привіт! Увійдіть в систему</p>
       </div>
-      <div id="card">
+      <div id="card-DM">
         <img src={cardIcon} alt="Card" />
       </div>
-      <div id="favorite">
+      <div id="favorite-DM">
         <img src={favoriteIcon} alt="Favorite" />
       </div>
     </div>
@@ -107,11 +105,11 @@ const SliderSection = () => {
   const slides = Array(7).fill("Назва набору");
 
   return (
-    <div className="slider-wrapper">
+    <div className="slider-wrapper-DM">
       <Slider {...settings}>
         {slides.map((title, index) => (
-          <div key={index} className="slider-card">
-            <div className="slider-card-box">{title}</div>
+          <div key={index} className="slider-card-DM">
+            <div className="slider-card-box-DM">{title}</div>
           </div>
         ))}
       </Slider>
@@ -127,15 +125,15 @@ const IdeasCardsSection = () => {
   ];
 
   return (
-    <section className="ideas-cards-section">
-      <h2 className="ideas-cards-title">НАША НОВА КОЛЕКЦІЯ</h2>
-      <div className="ideas-cards-container">
+    <section className="ideas-cards-section-DM">
+      <h2 className="ideas-cards-title-DM">НАША НОВА КОЛЕКЦІЯ</h2>
+      <div className="ideas-cards-container-DM">
         {cards.map((card, index) => (
-          <div className="ideas-card" key={index}>
-            <div className="ideas-card-image">
+          <div className="ideas-card-DM" key={index}>
+            <div className="ideas-card-image-DM">
               <img src={card.image} alt={`Card ${index + 1}`} />
             </div>
-            <div className="ideas-card-label">{card.label}</div>
+            <div className="ideas-card-label-DM">{card.label}</div>
           </div>
         ))}
       </div>
@@ -145,29 +143,17 @@ const IdeasCardsSection = () => {
 
 const IdeasMasonrySection = () => {
   const images = [
-    masonryImg1,
-    masonryImg2,
-    masonryImg3,
-    masonryImg4,
-    masonryImg5,
-    masonryImg1,
-    masonryImg2,
-    masonryImg3,
-    masonryImg4,
-    masonryImg5,
-    masonryImg6,
-    masonryImg7,
-    masonryImg8,
-    masonryImg9,
-    masonryImg10
+    masonryImg1, masonryImg2, masonryImg3, masonryImg4, masonryImg5,
+    masonryImg1, masonryImg2, masonryImg3, masonryImg4, masonryImg5,
+    masonryImg6, masonryImg7, masonryImg8, masonryImg9, masonryImg10
   ];
 
   return (
-    <section className="ideas-masonry-section">
-      <h2 className="ideas-masonry-title">ІДЕЇ</h2>
-      <div className="ideas-masonry-grid">
+    <section className="ideas-masonry-section-DM">
+      <h2 className="ideas-masonry-title-DM">ІДЕЇ</h2>
+      <div className="ideas-masonry-grid-DM">
         {images.map((img, index) => (
-          <div key={index} className="ideas-masonry-card">
+          <div key={index} className="ideas-masonry-card-DM">
             <img src={img} alt={`Ідея ${index + 1}`} />
           </div>
         ))}
@@ -175,6 +161,7 @@ const IdeasMasonrySection = () => {
     </section>
   );
 };
+
 const Footer = () => {
   const footerColumns = Array(4).fill({
     title: "Заголовок підрозділу",
@@ -182,10 +169,10 @@ const Footer = () => {
   });
 
   return (
-    <footer>
-      <div className="footer-columns">
+    <footer className="footer-DM">
+      <div className="footer-columns-DM">
         {footerColumns.map((col, index) => (
-          <div className="footer-column" key={index}>
+          <div className="footer-column-DM" key={index}>
             <h4>{col.title}</h4>
             <ul>
               {col.items.map((item, idx) => (
@@ -196,13 +183,13 @@ const Footer = () => {
         ))}
       </div>
 
-      <div className="footer-icons-row">
-        <div className="social-icons">
+      <div className="footer-icons-row-DM">
+        <div className="social-icons-DM">
           <img src={instagramIcon} alt="Instagram" />
           <img src={twitterIcon} alt="Twitter" />
           <img src={facebookIcon} alt="Facebook" />
         </div>
-        <div className="payment-icons">
+        <div className="payment-icons-DM">
           <img src={visaIcon} alt="Visa" />
           <img src={mastercardIcon} alt="MasterCard" />
           <img src={applepayIcon} alt="ApplePay" />
@@ -215,51 +202,45 @@ const Footer = () => {
 
 const App = () => {
   const ideas = [
-  {
-    title: "Оформлення гостинної",
-    text: "Як підібрати меблі, щоб було стильно та зручно...",
-    image: ideaImg1,
-  },
-  {
-    title: "Затишна спальня",
-    text: "Поради щодо текстилю, кольорів і світла для спальні.",
-    image: ideaImg2,
-  },
-];
+    {
+      title: "Оформлення гостинної",
+      text: "Як підібрати меблі, щоб було стильно та зручно...",
+      image: ideaImg1,
+    },
+    {
+      title: "Затишна спальня",
+      text: "Поради щодо текстилю, кольорів і світла для спальні.",
+      image: ideaImg2,
+    },
+  ];
 
   return (
-    <div>
+    <div className="app-container-DM">
       <TopBar />
       <NavBar />
-      <div className="app-container">
-        <section className="ideas-wrapper">
-          <h2 className="ideas-title">ІДЕЇ ДЛЯ ОФОРМЛЕННЯ</h2>
-          <p className="ideas-description">
-            Lorem ipsum dolor sit amet consectetur. Habitasse convallis gravida lectus blandit
-            convallis a sed. Egestas sapien amet scelerisque mauris tincidunt. Massa est pellentesque
-            facilisis vel...
-          </p>
-
-{ideas.map((idea, index) => (
-  <div className="idea-block" key={index}>
-    <div className="idea-image">
-      <img src={idea.image} alt={idea.title} />
-    </div>
-    <div className="idea-text">
-      <h3>{idea.title}</h3>
-      <p>{idea.text}</p>
-    </div>
-  </div>
-))}
-
-        </section>
-
-        <SliderSection />
-        <IdeasCardsSection />
-        <IdeasMasonrySection />
-        <SliderSection />
-      </div>
-
+      <section className="ideas-wrapper-DM">
+        <h2 className="ideas-title-DM">ІДЕЇ ДЛЯ ОФОРМЛЕННЯ</h2>
+        <p className="ideas-description-DM">
+          Lorem ipsum dolor sit amet consectetur. Habitasse convallis gravida lectus blandit
+          convallis a sed. Egestas sapien amet scelerisque mauris tincidunt. Massa est pellentesque
+          facilisis vel...
+        </p>
+        {ideas.map((idea, index) => (
+          <div className="idea-block-DM" key={index}>
+            <div className="idea-image-DM">
+              <img src={idea.image} alt={idea.title} />
+            </div>
+            <div className="idea-text-DM">
+              <h3>{idea.title}</h3>
+              <p>{idea.text}</p>
+            </div>
+          </div>
+        ))}
+      </section>
+      <SliderSection />
+      <IdeasCardsSection />
+      <IdeasMasonrySection />
+      <SliderSection />
       <Footer />
     </div>
   );
