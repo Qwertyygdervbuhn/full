@@ -1,18 +1,18 @@
 import React from "react";
 import "./App.css";
-import logo from "../public/logo.png";
-import pointIcon from "../public/Point.png";
-import peopleIcon from "../public/People.png";
-import cardIcon from "../public/Card.png";
-import favoriteIcon from "../public/Favorite.png";
-import instagramIcon from "../public/instagram.png";
-import twitterIcon from "../public/twitter.png";
-import facebookIcon from "../public/facebook.png";
-import visaIcon from "../public/Visa.png";
-import mastercardIcon from "../public/MasterCard.png";
-import applepayIcon from "../public/ApplePay.png";
-import paypalIcon from "../public/PayPal.png";
-import sadIcon from "../public/sad.png";
+import logo from "../public/logoDM.png";
+import pointIcon from "../public/PointDM.png";
+import peopleIcon from "../public/PeopleDM.png";
+import cardIcon from "../public/CardDM.png";
+import favoriteIcon from "../public/FavoriteDM.png";
+import instagramIcon from "../public/instagramDM.png";
+import twitterIcon from "../public/twitterDM.png";
+import facebookIcon from "../public/facebookDM.png";
+import visaIcon from "../public/VisaDM.png";
+import mastercardIcon from "../public/MasterCardDM.png";
+import applepayIcon from "../public/ApplePayDM.png";
+import paypalIcon from "../public/PayPalDM.png";
+import sadIcon from "../public/sadDM.png";
 
 const TopBar = () => {
   const texts = [
