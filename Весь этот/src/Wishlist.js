@@ -22,10 +22,10 @@ const TopBar = () => {
   ];
 
   return (
-    <div id="up">
-      <div className="scroll-content">
+    <div id="DM-up">
+      <div className="DM-scroll-content">
         {texts.map((text, index) => (
-          <p className="textLine" key={index}>{text}</p>
+          <p className="DM-textLine" key={index}>{text}</p>
         ))}
       </div>
     </div>
@@ -34,38 +34,38 @@ const TopBar = () => {
 
 const NavBar = () => (
   <nav>
-    <div id="navLeft">
-      <div id="divForBurgerMenu">
-        <div id="burgerMenu">
-          <hr className="lineInBurgerMenu" />
-          <hr className="lineInBurgerMenu" />
-          <hr className="lineInBurgerMenu" />
+    <div id="DM-navLeft">
+      <div id="DM-divForBurgerMenu">
+        <div id="DM-burgerMenu">
+          <hr className="DM-lineInBurgerMenu" />
+          <hr className="DM-lineInBurgerMenu" />
+          <hr className="DM-lineInBurgerMenu" />
         </div>
-        <h3 id="h3ForBurgerMenu">Menu</h3>
+        <h3 id="DM-h3ForBurgerMenu">Menu</h3>
       </div>
-      <img src={logo} alt="logo" id="logoInNav" />
-      <div id="divForTegA">
+      <img src={logo} alt="logo" id="DM-logoInNav" />
+      <div id="DM-divForTegA">
         <a href="#">Товари</a>
         <a href="#">Кімнати</a>
         <a href="#">Дизайн</a>
       </div>
     </div>
-    <div className="search-bar">
+    <div className="DM-search-bar">
       <input type="text" placeholder="Пошук" />
     </div>
-    <div id="navRight">
-      <div id="kiev">
+    <div id="DM-navRight">
+      <div id="DM-kiev">
         <img src={pointIcon} alt="Location" />
         <p>Київ</p>
       </div>
-      <div id="login-pass">
+      <div id="DM-login-pass">
         <img src={peopleIcon} alt="User" />
         <p>Привіт! Увійдіть в систему</p>
       </div>
-      <div id="card">
+      <div id="DM-card">
         <img src={cardIcon} alt="Card" />
       </div>
-      <div id="favorite">
+      <div id="DM-favorite">
         <img src={favoriteIcon} alt="Favorite" />
       </div>
     </div>
@@ -73,15 +73,15 @@ const NavBar = () => (
 );
 
 const EmptyCart = () => (
-  <div className="main">
+  <div className="DM-main">
     <h1>ВАШ СПИСОК БАЖАНЬ ПУСТИЙ...</h1>
-    <img src={sadIcon} alt="Sad face" className="sadIcon" />
+    <img src={sadIcon} alt="Sad face" className="DM-sadIcon" />
   </div>
 );
 
 const Footer = () => {
   const footerCols = Array(4).fill(0).map((_, i) => (
-    <div className="footer-col" key={i}>
+    <div className="DM-footer-col" key={i}>
       <h4>Заголовок підрозділу</h4>
       {Array(8).fill(0).map((_, j) => (
         <p key={j}>Зміст підтеми</p>
@@ -89,41 +89,38 @@ const Footer = () => {
     </div>
   ));
 
-  const icons = [instagramIcon, twitterIcon, facebookIcon, visaIcon, mastercardIcon, applepayIcon, paypalIcon];
-
   return (
     <footer>
-      <div className="footer-columns">
+      <div className="DM-footer-columns">
         {footerCols}
       </div>
-      <div className="footer-icons-row">
-<div className="footer-icons-row">
-  <div className="social-icons">
-    <img src={instagramIcon} alt="Instagram" />
-    <img src={twitterIcon} alt="Twitter" />
-    <img src={facebookIcon} alt="Facebook" />
-  </div>
-  <div className="payment-icons">
-    <img src={visaIcon} alt="Visa" />
-    <img src={mastercardIcon} alt="MasterCard" />
-    <img src={applepayIcon} alt="ApplePay" />
-    <img src={paypalIcon} alt="PayPal" />
-  </div>
-</div>
+      <div className="DM-footer-icons-row">
+        <div className="DM-footer-icons-row">
+          <div className="DM-social-icons">
+            <img src={instagramIcon} alt="Instagram" />
+            <img src={twitterIcon} alt="Twitter" />
+            <img src={facebookIcon} alt="Facebook" />
+          </div>
+          <div className="DM-payment-icons">
+            <img src={visaIcon} alt="Visa" />
+            <img src={mastercardIcon} alt="MasterCard" />
+            <img src={applepayIcon} alt="ApplePay" />
+            <img src={paypalIcon} alt="PayPal" />
+          </div>
+        </div>
       </div>
     </footer>
   );
 };
 
-
 function App() {
   return (
-    <div className="app-container">
+    <div className="DM-app-container">
       <TopBar />
-      <div id="mainDiv">
+      <div id="DM-mainDiv">
         <NavBar />
       </div>
-      <div className="wrapper">
+      <div className="DM-wrapper">
         <EmptyCart />
         <Footer />
       </div>
