@@ -6,27 +6,26 @@ body, html {
   background-color: #f9f9f9;
 }
 
-
-#up {
+#DM-up {
   background-color:  #839D9A;
   padding: 10px 0;
   overflow: hidden;
 }
 
-.scroll-content {
+.DM-scroll-content {
   display: flex;
-  animation: scroll-left 20s linear infinite;
+  animation: DM-scroll-left 20s linear infinite;
   white-space: nowrap;
   gap: 40px;
   padding-left: 100%;
 }
 
-.textLine {
+.DM-textLine {
   color: #333;
   font-weight: bold;
 }
 
-@keyframes scroll-left {
+@keyframes DM-scroll-left {
   from {
     transform: translateX(0%);
   }
@@ -34,7 +33,6 @@ body, html {
     transform: translateX(-100%);
   }
 }
-
 
 nav {
   background-color: white;
@@ -45,64 +43,64 @@ nav {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#navLeft {
+#DM-navLeft {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-#divForBurgerMenu {
+#DM-divForBurgerMenu {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-#burgerMenu {
+#DM-burgerMenu {
   display: flex;
   flex-direction: column;
   gap: 3px;
 }
 
-.lineInBurgerMenu {
+.DM-lineInBurgerMenu {
   width: 20px;
   height: 2px;
   background: black;
   margin: 0;
 }
 
-#divForTegA a {
+#DM-divForTegA a {
   margin: 0 10px;
   text-decoration: none;
   color: #222;
   font-weight: 500;
 }
 
-.search-bar input {
+.DM-search-bar input {
   padding: 8px 12px;
   border-radius: 4px;
   border: 1px solid #ccc;
 }
 
-#navRight {
+#DM-navRight {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-#navRight div {
+#DM-navRight div {
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
-.product-slider {
+.DM-product-slider {
   display: flex;
   gap: 20px;
   overflow-x: auto;
   padding: 20px 0;
 }
 
-.product-card {
+.DM-product-card {
   background: white;
   border-radius: 10px;
   padding: 15px;
@@ -112,75 +110,74 @@ nav {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.product-card img {
+.DM-product-card img {
   width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
-.product-card h4 {
+.DM-product-card h4 {
   margin: 10px 0 5px;
   font-size: 1rem;
 }
 
-.product-card p {
+.DM-product-card p {
   color: #666;
   font-size: 0.9rem;
 }
 
-
-.combo-section {
+.DM-combo-section {
   display: flex;
   gap: 20px;
   margin-top: 20px;
 }
 
-.combo-left {
+.DM-combo-left {
   flex: 2;
   background-color: #ddd;
   height: 200px;
   border-radius: 8px;
 }
 
-.combo-right {
+.DM-combo-right {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.combo-right-item {
+.DM-combo-right-item {
   background-color: #ccc;
   height: 95px;
   border-radius: 8px;
 }
 
-.combo-footer {
+.DM-combo-footer {
   height: 20px;
   background-color: #bbb;
   margin-top: 10px;
   border-radius: 5px;
 }
 
-.cozy-sets {
+.DM-cozy-sets {
   display: flex;
   gap: 20px;
   margin: 20px 0;
 }
 
-.cozy-card {
+.DM-cozy-card {
   background-color: #ddd;
   height: 150px;
   border-radius: 10px;
 }
 
-.icons-section {
+.DM-icons-section {
   display: flex;
   gap: 20px;
   margin: 40px 0;
 }
 
-.icon-card {
+.DM-icon-card {
   flex: 1;
   background: white;
   padding: 20px;
@@ -189,148 +186,152 @@ nav {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
 }
 
-.icon-placeholder {
+.DM-icon-placeholder {
   font-size: 2rem;
   margin-bottom: 10px;
 }
 
-.footer {
+.DM-footer {
   background-color: #fff;
   padding: 40px;
   border-top: 1px solid #ccc;
 }
 
-.footer-columns {
+.DM-footer-columns {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 30px;
 }
 
-.footer-column {
+.DM-footer-column {
   min-width: 200px;
 }
 
-.footer-column h4 {
+.DM-footer-column h4 {
   margin-bottom: 10px;
   color: #000;
   font-weight: bold;
 }
 
-.footer-column ul {
+.DM-footer-column ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.footer-column li {
+.DM-footer-column li {
   margin-bottom: 6px;
   font-size: 14px;
   color: #333;
 }
-
-
-.footer-icons {
+.DM-footer-icons {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
 }
 
-.social-icons img,
-.payment-icons img {
+.DM-social-icons img,
+.DM-payment-icons img {
   width: 30px;
   height: auto;
   margin-right: 10px;
 }
 
-.social-icons img,
-.payment-icons img {
+.DM-social-icons img,
+.DM-payment-icons img {
   height: 30px;
   margin-right: 10px;
 }
 
 @media (max-width: 768px) {
-  nav, .product-slider, .combo-section, .icons-section {
+  nav,
+  .DM-product-slider,
+  .DM-combo-section,
+  .DM-icons-section {
     flex-direction: column;
     align-items: stretch;
   }
 
-  .product-card {
+  .DM-product-card {
     width: 100%;
   }
 
-  .footer-icons-row {
+  .DM-footer-icons-row {
     flex-direction: column;
     gap: 20px;
     align-items: flex-start;
   }
 }
-.footer-icons-row {
+
+.DM-footer-icons-row {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px; 
+  gap: 40px;
   margin-top: 30px;
   flex-wrap: wrap;
 }
 
-.social-icons,
-.payment-icons {
+.DM-social-icons,
+.DM-payment-icons {
   display: flex;
-  gap: 16px; 
+  gap: 16px;
 }
 
-.footer-icons-row img {
+.DM-footer-icons-row img {
   width: 40px;
   height: auto;
   transition: transform 0.3s;
 }
-.combo-section {
+
+.DM-combo-section {
   display: flex;
   gap: 20px;
   margin-top: 20px;
   max-width: 1200px;
 }
 
-.combo-left {
+.DM-combo-left {
   flex-shrink: 0;
 }
 
-.combo-left.image-wrapper.large {
+.DM-combo-left.DM-image-wrapper.large {
   width: 320px;
   height: 420px;
 }
 
-.combo-right {
+.DM-combo-right {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.combo-right-item.image-wrapper.small {
+.DM-combo-right-item.DM-image-wrapper.small {
   width: 160px;
   height: 200px;
 }
 
-.combo-footer.image-wrapper.wide {
+.DM-combo-footer.DM-image-wrapper.wide {
   margin-top: 20px;
   width: 100%;
   height: 250px;
   max-width: 1200px;
 }
 
-.image-wrapper {
+.DM-image-wrapper {
   border-radius: 12px;
   overflow: hidden;
 }
 
-.image-wrapper img {
+.DM-image-wrapper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
+
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -338,99 +339,102 @@ nav {
     padding: 10px 20px;
   }
 
-  #navLeft,
-  #navRight,
-  .search-bar {
+  #DM-navLeft,
+  #DM-navRight,
+  .DM-search-bar {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
     width: 100%;
   }
 
-  #divForTegA {
+  #DM-divForTegA {
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 100%;
   }
 
-  .search-bar {
+  .DM-search-bar {
     width: 100%;
   }
 
-  .search-bar input {
+  .DM-search-bar input {
     width: 100%;
   }
 
-  .product-slider {
+  .DM-product-slider {
     flex-direction: column;
     overflow-x: visible;
   }
 
-  .product-card {
+  .DM-product-card {
     width: 100%;
   }
 
-  .combo-section {
+  .DM-combo-section {
     flex-direction: column;
     align-items: center;
   }
 
-  .combo-left.image-wrapper.large,
-  .combo-footer.image-wrapper.wide {
+  .DM-combo-left.DM-image-wrapper.large,
+  .DM-combo-footer.DM-image-wrapper.wide {
     width: 100%;
     height: auto;
   }
 
-  .combo-right {
+  .DM-combo-right {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .combo-right-item.image-wrapper.small {
+  .DM-combo-right-item.DM-image-wrapper.small {
     width: 45%;
     height: auto;
   }
 
-  .cozy-sets {
+  .DM-cozy-sets {
     flex-direction: column;
   }
 
-  .icons-section {
+  .DM-icons-section {
     flex-direction: column;
   }
 
-  .icon-card {
+  .DM-icon-card {
     width: 100%;
   }
 
-  .footer-columns {
+  .DM-footer-columns {
     flex-direction: column;
     gap: 20px;
   }
 
-  .footer-icons-row {
+  .DM-footer-icons-row {
     flex-direction: column;
     align-items: center;
   }
 
-  .social-icons
-  .payment-icons {
+  .DM-social-icons
+  .DM-payment-icons {
     justify-content: center;
   }
 }
-.image-wrapper img {
+
+.DM-image-wrapper img {
   width: 100%;
   height: auto;
   border-radius: 8px;
 }
-.combo-section {
+
+.DM-combo-section {
   display: flex;
   gap: 16px;
   margin-bottom: 16px;
 }
-.combo-right {
+
+.DM-combo-right {
   display: flex;
   flex-direction: column;
   gap: 16px;
