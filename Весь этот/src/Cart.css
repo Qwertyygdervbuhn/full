@@ -1,4 +1,4 @@
-html, body {
+html, html, body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
@@ -14,20 +14,20 @@ html, body {
   flex-direction: column;
 }
 
-.app-container {
+.app-container-DM {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
 
-.wrapper {
+.wrapper-DM {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-#up {
+#up-DM {
   display: flex;
   align-items: center;
   width: 100%;
@@ -38,29 +38,25 @@ html, body {
   overflow-x: auto;
   white-space: nowrap;
 }
-.scroll-content {
+
+.scroll-content-DM {
   display: flex;
   gap: 40px;
   white-space: nowrap;
   animation: scroll-left 20s linear infinite;
 }
-.textLine {
+
+.textLine-DM {
   color: #fff;
   font-size: 14px;
   flex-shrink: 0;
 }
 
-
-.textLine {
-  color: #fff;
-  font-size: 14px;
-}
-
-#mainDiv {
+#mainDiv-DM {
   padding: 20px 60px;
 }
 
-nav {
+.nav-DM {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -68,20 +64,21 @@ nav {
   gap: 10px;
 }
 
-#navLeft, #navRight {
+#navLeft-DM,
+#navRight-DM {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-#divForBurgerMenu {
+#divForBurgerMenu-DM {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-right: 10px;
 }
 
-.lineInBurgerMenu {
+.lineInBurgerMenu-DM {
   background: #000;
   border: none;
   height: 4px;
@@ -89,25 +86,25 @@ nav {
   margin: 2px 0;
 }
 
-#logoInNav {
+#logoInNav-DM {
   width: 100px;
   height: auto;
 }
 
-#divForTegA a {
+#divForTegA-DM a {
   margin: 0 10px;
   text-decoration: none;
   color: #333;
   font-weight: bold;
 }
 
-.search-bar {
+.search-bar-DM {
   flex-grow: 1;
   display: flex;
   justify-content: center;
 }
 
-.search-bar input {
+.search-bar-DM input {
   width: 100%;
   max-width: 500px;
   padding: 8px 12px;
@@ -116,19 +113,19 @@ nav {
   font-size: 14px;
 }
 
-.main {
+.main-DM {
   text-align: center;
   margin-top: 50px;
   font-size: 24px;
 }
 
-.sadIcon {
+.sadIcon-DM {
   width: 60px;
   height: auto;
   margin-top: 20px;
 }
 
-footer {
+.footer-DM {
   background-color: #f4f4f4;
   padding: 60px 20px 40px;
   margin-top: 40px;
@@ -136,70 +133,59 @@ footer {
   min-height: 300px; 
 }
 
-.footer-columns {
+.footer-columns-DM {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 40px;
 }
 
-.footer-col {
+.footer-col-DM {
   flex: 1;
   min-width: 180px;
   margin: 10px;
 }
 
-.footer-col h4 {
+.footer-col-DM h4 {
   font-size: 18px;
   margin-bottom: 12px;
 }
 
-.footer-col p {
+.footer-col-DM p {
   margin: 6px 0;
   font-size: 20px;
 }
 
-.footer-icons-row {
+.footer-icons-row-DM {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
+  gap: 40px; 
   margin-top: 30px;
   flex-wrap: wrap;
 }
 
-.footer-icons-row img {
+.social-icons-DM,
+.payment-icons-DM {
+  display: flex;
+  gap: 16px; 
+}
+
+.footer-icons-row-DM img {
   width: 40px;
   height: auto;
   transition: transform 0.3s;
 }
 
-.footer-icons-row img:hover {
+.footer-icons-row-DM img:hover {
   transform: scale(1.1);
 }
-#kiev, #login-pass {
+
+#kiev-DM,
+#login-pass-DM {
   display: flex;
   align-items: center;
   gap: 8px;
-}
-#up {
-  overflow: hidden;
-  background: #839D9A;
-  height: 30px;
-  display: flex;
-  align-items: center;
-}
-
-.scroll-content {
-  display: flex;
-  gap: 40px;
-  white-space: nowrap;
-  animation: scroll-left 20s linear infinite;
-}
-
-.textLine {
-  color: #fff;
-  font-size: 14px;
-  flex-shrink: 0;
 }
 
 @keyframes scroll-left {
@@ -210,136 +196,113 @@ footer {
     transform: translateX(-100%);
   }
 }
-.footer-icons-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px; 
-  margin-top: 30px;
-  flex-wrap: wrap;
-}
-
-.social-icons,
-.payment-icons {
-  display: flex;
-  gap: 16px; 
-}
-
-.footer-icons-row img {
-  width: 40px;
-  height: auto;
-  transition: transform 0.3s;
-}
-
-.footer-icons-row img:hover {
-  transform: scale(1.1);
-}
 
 @media (max-width: 768px) {
-  #mainDiv {
+  #mainDiv-DM {
     padding: 10px 20px;
   }
 
-  nav {
+  .nav-DM {
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
   }
 
-  #navLeft, #navRight {
+  #navLeft-DM,
+  #navRight-DM {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
     width: 100%;
   }
 
-  #divForTegA {
+  #divForTegA-DM {
     display: flex;
     flex-direction: column;
     gap: 8px;
   }
 
-  #divForTegA a {
+  #divForTegA-DM a {
     margin: 0;
     font-size: 16px;
   }
 
-  .search-bar {
+  .search-bar-DM {
     width: 100%;
     justify-content: center;
   }
 
-  .search-bar input {
+  .search-bar-DM input {
     max-width: 100%;
     width: 100%;
     font-size: 16px;
   }
 
-  .footer-columns {
+  .footer-columns-DM {
     flex-direction: column;
     padding: 0 20px;
     align-items: center;
   }
 
-  .footer-col {
+  .footer-col-DM {
     width: 100%;
     max-width: 300px;
     text-align: center;
   }
 
-  .footer-col p {
+  .footer-col-DM p {
     font-size: 16px;
   }
 
-  .footer-col h4 {
+  .footer-col-DM h4 {
     font-size: 16px;
   }
 
-  .footer-icons-row {
+  .footer-icons-row-DM {
     flex-direction: column;
     gap: 20px;
   }
 
-  .social-icons,
-  .payment-icons {
+  .social-icons-DM,
+  .payment-icons-DM {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
   }
 
-  #login-pass p,
-  #kiev p {
+  #login-pass-DM p,
+  #kiev-DM p {
     font-size: 14px;
   }
 
-  .main h1 {
+  .main-DM h1 {
     font-size: 20px;
     padding: 0 10px;
   }
 
-  .sadIcon {
+  .sadIcon-DM {
     width: 40px;
   }
 
-  #burgerMenu {
+  #burgerMenu-DM {
     display: block;
   }
 
-  #divForBurgerMenu {
+  #divForBurgerMenu-DM {
     flex-direction: row;
     align-items: center;
   }
 
-  #h3ForBurgerMenu {
+  #h3ForBurgerMenu-DM {
     font-size: 16px;
     margin-left: 8px;
   }
 
-  #logoInNav {
+  #logoInNav-DM {
     width: 80px;
   }
 
-  nav {
+  .nav-DM {
     gap: 0;
   }
 }
