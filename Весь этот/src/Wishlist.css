@@ -14,20 +14,20 @@ html, body {
   flex-direction: column;
 }
 
-.app-container {
+.DM-app-container {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
 
-.wrapper {
+.DM-wrapper {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-#up {
+#DM-up {
   display: flex;
   align-items: center;
   width: 100%;
@@ -37,154 +37,17 @@ html, body {
   gap: 30px;
   overflow-x: auto;
   white-space: nowrap;
-}
-
-.textLine {
-  color: #fff;
-  font-size: 14px;
-}
-
-#mainDiv {
-  padding: 20px 60px;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-#navLeft, #navRight {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-#divForBurgerMenu {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-right: 10px;
-}
-
-.lineInBurgerMenu {
-  background: #000;
-  border: none;
-  height: 4px;
-  width: 30px;
-  margin: 2px 0;
-}
-
-#logoInNav {
-  width: 100px;
-  height: auto;
-}
-
-#divForTegA a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
-
-.search-bar {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.search-bar input {
-  width: 100%;
-  max-width: 500px;
-  padding: 8px 12px;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  font-size: 14px;
-}
-
-.main {
-  text-align: center;
-  margin-top: 50px;
-  font-size: 24px;
-}
-
-.sadIcon {
-  width: 60px;
-  height: auto;
-  margin-top: 20px;
-}
-
-footer {
-  background-color: #f4f4f4;
-  padding: 60px 20px 40px;
-  margin-top: 40px;
-  font-family: Arial, sans-serif;
-  min-height: 300px; 
-}
-
-.footer-columns {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0 40px;
-}
-
-.footer-col {
-  flex: 1;
-  min-width: 180px;
-  margin: 10px;
-}
-
-.footer-col h4 {
-  font-size: 18px;
-  margin-bottom: 12px;
-}
-
-.footer-col p {
-  margin: 6px 0;
-  font-size: 20px;
-}
-
-.footer-icons-row {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 30px;
-  flex-wrap: wrap;
-}
-
-.footer-icons-row img {
-  width: 40px;
-  height: auto;
-  transition: transform 0.3s;
-}
-
-.footer-icons-row img:hover {
-  transform: scale(1.1);
-}
-#kiev, #login-pass {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-#up {
   overflow: hidden;
-  background: #839D9A;
-  height: 30px;
-  display: flex;
-  align-items: center;
 }
 
-.scroll-content {
+.DM-scroll-content {
   display: flex;
   gap: 40px;
   white-space: nowrap;
   animation: scroll-left 20s linear infinite;
 }
 
-.textLine {
+.DM-textLine {
   color: #fff;
   font-size: 14px;
   flex-shrink: 0;
@@ -198,32 +61,143 @@ footer {
     transform: translateX(-100%);
   }
 }
-.footer-icons-row {
+
+#DM-mainDiv {
+  padding: 20px 60px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#DM-navLeft, #DM-navRight {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#DM-divForBurgerMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.DM-lineInBurgerMenu {
+  background: #000;
+  border: none;
+  height: 4px;
+  width: 30px;
+  margin: 2px 0;
+}
+
+#DM-logoInNav {
+  width: 100px;
+  height: auto;
+}
+
+#DM-divForTegA a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.DM-search-bar {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.DM-search-bar input {
+  width: 100%;
+  max-width: 500px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.DM-main {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 24px;
+}
+
+.DM-sadIcon {
+  width: 60px;
+  height: auto;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #f4f4f4;
+  padding: 60px 20px 40px;
+  margin-top: 40px;
+  font-family: Arial, sans-serif;
+  min-height: 300px;
+}
+
+.DM-footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.DM-footer-col {
+  flex: 1;
+  min-width: 180px;
+  margin: 10px;
+}
+
+.DM-footer-col h4 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.DM-footer-col p {
+  margin: 6px 0;
+  font-size: 20px;
+}
+
+.DM-footer-icons-row {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px; 
+  gap: 40px;
   margin-top: 30px;
   flex-wrap: wrap;
 }
 
-.social-icons,
-.payment-icons {
+.DM-social-icons,
+.DM-payment-icons {
   display: flex;
-  gap: 16px; 
+  gap: 16px;
 }
 
-.footer-icons-row img {
+.DM-footer-icons-row img {
   width: 40px;
   height: auto;
   transition: transform 0.3s;
 }
 
-.footer-icons-row img:hover {
+.DM-footer-icons-row img:hover {
   transform: scale(1.1);
 }
+
+#DM-kiev, #DM-login-pass {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 @media (max-width: 768px) {
-  #mainDiv {
+  #DM-mainDiv {
     padding: 10px 20px;
   }
 
@@ -233,96 +207,93 @@ footer {
     gap: 15px;
   }
 
-  #navLeft, #navRight {
+  #DM-navLeft, #DM-navRight {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
     width: 100%;
   }
 
-  #divForTegA {
+  #DM-divForTegA {
     display: flex;
     flex-direction: column;
     gap: 8px;
   }
 
-  #divForTegA a {
+  #DM-divForTegA a {
     margin: 0;
     font-size: 16px;
   }
 
-  .search-bar {
+  .DM-search-bar {
     width: 100%;
     justify-content: center;
   }
 
-  .search-bar input {
+  .DM-search-bar input {
     max-width: 100%;
     width: 100%;
     font-size: 16px;
   }
 
-  .footer-columns {
+  .DM-footer-columns {
     flex-direction: column;
     padding: 0 20px;
     align-items: center;
   }
 
-  .footer-col {
+  .DM-footer-col {
     width: 100%;
     max-width: 300px;
     text-align: center;
   }
 
-  .footer-col p {
+  .DM-footer-col p,
+  .DM-footer-col h4 {
     font-size: 16px;
   }
 
-  .footer-col h4 {
-    font-size: 16px;
-  }
-
-  .footer-icons-row {
+  .DM-footer-icons-row {
     flex-direction: column;
     gap: 20px;
   }
 
-  .social-icons,
-  .payment-icons {
+  .DM-social-icons,
+  .DM-payment-icons {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
   }
 
-  #login-pass p,
-  #kiev p {
+  #DM-login-pass p,
+  #DM-kiev p {
     font-size: 14px;
   }
 
-  .main h1 {
+  .DM-main h1 {
     font-size: 20px;
     padding: 0 10px;
   }
 
-  .sadIcon {
+  .DM-sadIcon {
     width: 40px;
   }
 
-  #burgerMenu {
+  #DM-burgerMenu {
     display: block;
   }
 
-  #divForBurgerMenu {
+  #DM-divForBurgerMenu {
     flex-direction: row;
     align-items: center;
   }
 
-  #h3ForBurgerMenu {
+  #DM-h3ForBurgerMenu {
     font-size: 16px;
     margin-left: 8px;
   }
 
-  #logoInNav {
+  #DM-logoInNav {
     width: 80px;
   }
 
